@@ -1,0 +1,19 @@
+@import '../global/variables.scss';
+
+.prompt {
+  color: $white;
+  width: 160px;
+  height: 200px;
+  border: 2px solid $white;
+  border-radius: 8px;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1.25em;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
