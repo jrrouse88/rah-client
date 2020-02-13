@@ -1,0 +1,17 @@
+@import '../global/variables.scss';
+
+.response {
+  position: absolute;
+  width: 160px;
+  height: 200px;
+  border: 1px solid $white;
+  border-radius: 8px;
+  transform-origin: bottom center;
+}
+@for $i from 1 through 6 {
+  .response:nth-child(#{$i}) {
+    left: calc(#{$i} * 10px);
+    top : calc(#{$i}px - 10px);
+    transform: rotate(calc(#{$i} * 5deg));
+  }
+}
